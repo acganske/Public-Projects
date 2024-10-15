@@ -1,0 +1,101 @@
+/** container with shadows.. **/
+.shadowContainer {
+    width:70%;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height:60px;
+}
+/** container so I can use grid without affecting shadowContainer**/
+.box1 {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+}
+
+input[type="text"] {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    height:40px;
+}
+/** specific search button styling, overrides button in some areas **/
+.searchButton {
+    grid-column:2;
+    grid-row:1;
+    height:40px;
+    width:80px;
+    justify-self: end;
+
+}
+/** general button styling **/
+button {
+    background-color: #282c34;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8em;
+    height:30px;
+    width:70px;
+    text-align:center;
+}
+
+button:hover {
+    background-color: #5b6578;
+}
+/** but in grid of box1, specifically under the input box and search button **/
+.suggestions {
+    grid-column:1/span 2;
+    grid-row:2;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.suggestion-item {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff; /* White background for suggestions */
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #e0e0e0; /* Light grey on hover */
+}
+
+/** styling for items in selected breed list **/
+.breedListItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height:40px;
+}
+/** simple button styling **/
+.remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+/**  button gets darker when you hover over it  **/
+.remove-button:hover {
+    background-color: #e60000;
+}

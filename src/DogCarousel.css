@@ -1,0 +1,42 @@
+/** container for carousel **/
+.carouselContainer {
+    position:relative;
+    width:70%;
+    margin-left:15%;
+    max-height:600px;
+    overflow: auto ;
+    align-items: center;
+    margin-bottom:20px;
+}
+.carouselSelShadowContainer {
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light grey background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    position: relative; /* Make container the reference for absolute positioning */
+    overflow:hidden;
+}
+
+.glide__track {
+    overflow: hidden;
+    margin: 20px 0;
+    width:100%;
+}
+
+.glide__slides {
+    display: flex;
+    align-items: center;
+}
+
+.glide__slide {
+    padding: 10px;
+}
+
+.glide__slide img {
+    border-radius: 5px; /* Rounded corners for images */
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
